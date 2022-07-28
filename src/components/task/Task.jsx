@@ -13,7 +13,7 @@ export function Task({id, checked, content, deleteTask, updateStatus}) {
 
 
     return (
-        <div className={style.task}>
+        <div className={checked ? style.taskDone : style.task}>
 
         { checked ?
             <button onClick={handleUpdateStatus} className={style.checkedCircle}>
